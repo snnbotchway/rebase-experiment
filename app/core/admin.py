@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-    """Define admin model for custom User model with no email field."""
+    """Define admin model for custom User model."""
 
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
